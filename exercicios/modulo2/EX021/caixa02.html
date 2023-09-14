@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      body {
+      font-family:'Nanum Gothic', sans-serif;;
+      background-color: rgb(145, 161, 255);
+    }
+
+    header {
+      background-color: aliceblue;
+      text-align: center;
+      color: rgb(65, 7, 119);
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px 0px;
+      box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.311);
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(166, 98, 244, 0.876);
+      padding: 20px;
+      border-radius: 10px 10px;
+      box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.439);
+      
+    }
+
+    nav > a {
+      text-decoration: none;
+      color: antiquewhite;
+      font-weight: bold;
+      box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.436)
+      /*deslocamento horizontal, vertical, espalhamento e sombra. Positivo para a direita, negativo para a esquerda
+      Podemos projetar a sombra pelo devtools para melhor visualização de como ela vai ficar no projeto
+      A sombra não pode ser uma cor sólida e sim uma cor mais transparente para dar o efeito de sombra*/
+          }
+
+    nav > a:hover {
+      text-decoration: underline;
+      color: rgb(54, 10, 94);
+    }         
+
+    main {
+      background-color: aliceblue;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px 0px; /*Se deixar negativo, ele risca*/
+      box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.311);
+      
+    }
+
+    article {
+      background-color: aliceblue;
+      padding: 5px;
+    }
+
+    article > aside {
+      background-color: rgba(77, 69, 183, 0.436);
+      padding: 10px;
+      border-radius: 10px 0px;
+    }
+
+    footer {
+      background-color: rgb(71, 77, 255);
+      color: aliceblue;
+      text-align: center;
+      padding: 1px;
+      margin: 0px;
+      border-radius: 5px 0px;
+      box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.439);
+
+    }
+
+    footer > p {
+      margin: 0px;
+    }
+
+    div#bola {
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      background-color: aliceblue;
+      border-radius: 50%;
+      align-items: center;
+                  
+    }
+  </style>
+</head>
+<body>
+    <!--Podemos montar um site de forma semântica, contribuindo para os mecanismos de busca
+  Cabeçalho (header), navegação/menu (nav), conteúdo principal (main), rodapé (footer) - Tags semânticas, elas funcionam como divs
+  Shorthand serve para simplificar declarações
+  -->
+<header>
+<h1>Meu Site</h1>
+<nav>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</nav>
+</header>
+
+
+<main>
+<section id="assuntos">
+  <p>Tecnologia</p>
+
+</section>
+<section id="noticias">
+  <article>
+    <aside>
+      <h1>Notícias sobre Tecnologia</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, deserunt quae facere illo culpa animi repudiandae commodi odio accusamus ipsam tempora possimus necessitatibus nobis a sint doloremque autem dolor aspernatur!</p>
+      <p>Artigo escrito por Caterina</p>
+    </aside>
+  </article>
+</section>
+
+</main>
+
+
+<footer>
+  <p>Desenvolvido por Caterina Wiers</p>
+</footer>
+<div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*regras são no início do CSS. Essa regra acima é para referir ao UTF-8. Regras começam com @
+Podemos utilizar mais de um link de estilo css3
+Ecite usar a técnica inline no html5, mas se precisar fazer algo exclusivamente e pontual, pode fazer. Mas tem que ser BEM exclusivo. Ou seja, posso usar css interno, externo e inline. O que tem maior peso para aparecer primeir é o inline, depois o interno e depois o externo*/
+
+body {
+  background-color: cornflowerblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  color: blue;
+  background-color: lightblue;
+}
+
+h2 {
+  color: crimson;
+}
+
+p {
+  text-align: justify;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatação de Textos</title>
+  <style>
+    mark {
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <h1>Principais Formatações</h1>
+  <p>Forma: CSS
+  <p>Sentido: HTML</p>
+  </p>
+  <h2>Negrito / Destaque</h2>
+  <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag b (não semântica).</p>
+  <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag strong (semântico. É um termo forte no texto, que faz sentido)</p>
+  <h2>Itálico / Ênfase</h2>
+  <!--CTRL + SHIFT + P = Emmet: envelope com a abreviatura, wrap with abbreviation. Ele pergunta qual tag vc quer envelopar, digite  e aperte enter e, assim, envelopa-se essa parte selecionada-->
+  <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag i (não semântica).</p>
+  <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+  <p>Procure usar mais a tag i e a tag em, porque são mais novas</p>
+  <h2>Termo Marcado</h2>
+  <p>Podemos criar também também um <mark>texto marcado</mark> usando a tag MARK.</p>
+  <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> usando a tag MARK</p>
+<!--No parâmetro style, não é mais HTML e sim CSS. Utilizamos para fazer uma modificação pontual, de uma coisa específica. Selecionamos o parâmetro background-color e selecionamos a cor desejado para a marcação
+  Para usar todas as marcações de uma mesma cor, criamos um seletor logo abaixo do título, assim todas as marcaç ões ficarão iguais. Se quiser uma de cada cor, utilizamos o parâmetro style em cada tag mark-->
+  <h2>Texto grande e texto pequeno</h2>
+  <p>Estamos criando um <big>texto grande</big> e um <small>pequeno</small></p>
+  <!--a tag big está absoleta. Aumentar uma palavra ou frase não significa que vc queira dar uma sifnificado maior para aquele texto. Conseguimos dar sentido para letras pequenas, porque se num texto está escrito 'leias as letras pequenas', ou seja, elas tem importância no texto. É um texto secundário, mas que também deve ser lido.-->
+  <h2>Texto Deletado</h2>
+  <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado com a tag DEL.</p>
+  <h2>Texto inserido</h2>
+  <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois com a tag INS.</p>
+  <p>Existe também o <u>sublinhado</u> com a tag U (não semântica. E ela está prestes a morrer).</p>
+  <h2>Texto sobrescrito</h2>
+  <p>Para inserir coisas do tipo <sup>20+3</sup> com a tag SUP.</p>
+  <h2>Texto subescrito</h2>
+  <p>Para inserir coisas do tipo H<sub>2</sub>O com a tag SUB.</p>
+</body>
+</html>

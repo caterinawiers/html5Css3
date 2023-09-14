@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeos com HTML5</title>
+</head>
+<body>
+  <!--Nada de hospedar arquivo maior que 1080px
+  Reduzir a largura não quer dizer que eu diminui o peso desse vídeo-->
+  <h1>Inserindo vídeos hospedados localmente</h1>
+  <p>Este vídeo está hospedado no meu próprio servidor:</p>
+<!--Carregue todos os tipos de vídeos para carregar em todos os tipos de navegadores. No Safari,por exemplo, não abre arquivos em .ogv
+Vou organizar para carregar as opções de tipos de vídeos do menor para o maior, observando o tamanho do arquivo de cada um deles. Nesse caso, o meu menor arquivo está em mp4
+Em poster = quando pausar o vídeo terá meu tumb aparecendo-->
+  <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop>
+    <source src="midias/meu-video.mp4" type="video/mp4">
+    <source src="midias/meu-video.m4v" type="video/mp4">
+    <source src="midias/meu-video.webm" type="video/webm">
+    <source src="midias/meu-video.ogv" type="video/ogg">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+  </video>
+  <!--vídeos hospedados no próprio site consomem muito tráfego de dados e isso acaba pesando no bolso do cliente. Essa maneira é bem custosa.-->
+  <h1>Inserindo vídeos do YouTube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <!--Aqui ele consome dados do YouTube e não do próprio servidor. Utilizar mais os vídeos do YouTube para ser achado pelo algoritmo do Google, já que ele faz parte dessa empresa.  No vimeo podemos colocar vídeos privados para plataformas pagas/de assinantes. Sua vantagem está na qualidade do vídeo e opções de edição para html5 (como tamanho, cor, foto do autor, etc), mas não contribui muito para o algoritmo do google.-->
+</body>
+</html>

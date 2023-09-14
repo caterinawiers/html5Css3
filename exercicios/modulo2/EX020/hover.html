@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Hover</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div > p {
+      display: none; /*os parágrafos que estão dentro da div, eu não vou querer mexer, ou seja, não mostre nada dos parágrafos filhos da div. Só que abaixo, colocarei o seletor de que quando mexer o mouse e passá-lo em cima do texto, esse parágrafo aparecerá*/
+    }
+
+    div:hover > p {
+      display: block;
+      color: white;
+      background-color: red;
+      width: 300px;
+    } /*quando passar o mouse por cima, ele mostrará o texto escondido do parágrafo*/
+
+    div:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemlo de Hover</h1>
+  <p>Passe o mouse sobre o texto abaixo:</p>
+  <div>
+    Passe o mouse aqui
+      <p>TEXTO ESCONDIDO...</p> <!--Para esconder o parágrafo que está dentro da div, vou em style, coloco o seletor div > p (parágrafo que está dentro, que é filho de uma div)-->
+  </div>
+  <p>Fim do exemplo</p>
+</body>
+</html>

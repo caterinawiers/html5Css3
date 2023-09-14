@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+
+    /*
+    SELETORES PERSONALIZADOS:
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = psudo-element
+        >   = children
+
+    */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: blue;
+    }
+
+    #titulo {
+    color: blueviolet;
+  }
+        
+    a {
+      color: blueviolet;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    a:visited {
+      color: rgb(58, 58, 234);
+    }
+
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: rgb(255, 25, 0);
+    }
+
+    a::after {
+      content: ' [link]';
+      text-decoration: none;
+      font-weight: normal;
+      color: darkgray;
+    }
+    
+.especial {
+  color: aliceblue;
+  background-color: blueviolet;
+}
+
+    .especial::before {
+      content: '☠ ';
+    }
+
+    .especial::after {
+      content: ' ☢';
+    }
+  </style>
+
+  <!--também temos os pseudo elementos, que agem nas clksses, nos elementos, nas id, mexem no conteúdo periférico do elemento
+  
+    pseudo classes uso assim :
+  pseudo elementos eu uso 2x dois pontos :: -->
+</head>
+<body>
+  <h1 id="titulo">Persolizando Links</h1>
+  <ul>
+    <li><a href="https://github.com/caterinawiers" target="_blank">Repositório GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/caterinawiers/" target="_blank" class="especial">Linkedin</a></li>
+    <li><a href="mailto: caterinawps@gmail.com" target="_blank">E-mail</a></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos Locais / Internos</title>
+  <!--estilos devem ser colocados na cabeça. Ele vão ser criados através de seletores. Não esquecer de colocar ; depois de cada declaração (propriedade + valor)-->
+  <style>
+    body {
+      background-color: cornflowerblue;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    h1 {
+      color: blue;
+      background-color: lightblue;
+    }
+
+    h2 {
+      color: crimson;
+    }
+
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <!--Nessa configuração, cada seletor h1 do css aplica pra todos os h1 do documento
+  Essa técnica funciona plenamente para apenas um documento (css3 localmente/internamente). Para dois ou mais documentos, deve-se utilizar a técnica do próximo exercício (EX015).
+  Desvantagem desse método do style na head:
+  1)ocupa mais linhas de código do que o próprio conteúdo do documento
+  2)se eu precisa estilizar várias páginas, vou ter que copiar e colar todo esse código css3 que está na head
+-->
+     <h1>Capítulo 1</h1>
+  <h2>Capítulo 1.1</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum unde numquam, velit porro sit obcaecati dolor impedit placeat, quae hic tempora fugiat. Quos, quae nulla reprehenderit veritatis exercitationem ipsum impedit?</p>
+  <h2>Capítulo 1.2</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex nobis culpa dolore ullam laboriosam, quisquam harum! Cum autem ab facilis? Tempore ratione corrupti numquam, quibusdam vero recusandae voluptates architecto!</p>
+  <h1>Capítulo 2</h1>
+  <h2>Capítulo 2.1</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum accusamus error adipisci et in! Ea, veritatis. Rem, consectetur esse eveniet ab, nobis harum impedit laborum eum voluptate nostrum excepturi?</p>
+</body>
+</html>

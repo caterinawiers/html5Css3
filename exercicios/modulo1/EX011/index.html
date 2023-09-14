@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <!--O arquivo de imagem que eu tenho maior no meu site é de 1000px. Por padrão, ele vai carregar a imagem grande, mas se por um acaso, meu navegador tiver menos de 100px, ele vai carregar a imagem média
+    srcset = onde colocamos a imagem alternativa
+    type = é o tipo de arquivo da imagem
+    Colocar 50px a mais no 1000px, pq geralmente é a largura da barra de rolagem. Isso faz com que a barra de rolagem nunca apareça. gerando responsividade. A imagem menor deve ser carregada acima da maior. Ou seja, a base é a imagem padrão que eu carregar, acima dela, vou carregamdo as que eu vou adaptar. A ordem deve ser obedecida, senão, não funciona
+  Nesse, caso, por padrão vai carregar a imagem G, se for menor, vai carregar a m e assim por diante-->
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexível">
+    
+  </picture>
+  <!--A tag picture permite que criemos vários sources dentro dela.
+  Usuários se incomodam muito com a necessidade de rolagem lateral de tela, saindo do site ou diminuindo a retenção dele (taxa de rejeição = bounce rate. Alto bounce rate é algo ruim, o algoritmo entende como um site ruim). Sempre devemos nos preocupar com a experiência do usuário dentro da tela.
+  -->
+
+  <h1>Reproduzindo Áudio</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5</p>
+  <!--controls = é para aparecer o controle de play, pause, volume / autoplay = começar sozinho, depende do navegador.
+  Compatível com formatos: MP3 WAV OGG (open source)
+  metadata = ele carrega as informações do arquivo, mas não o arquivo todo em si, não pesando tanto o site, só carrega quando for aplicado.
+
+  Evite arquivos wav, pois são arquivos grandes e muitos pesados. Arquivo de navegação não precisa ser top, ser altamente grande e resoluto, procure arquivos o mais comprimidos possível. Já para arquivos de download, aí sim podemos colocar arquivos mais pesados.
+
+  O tipo de arquivo em MP3 é o tipo MPEG
+
+  Essa maneira aqui é mais simples, porém nao tem "responsividade", ou seja, se não carregar um arquivo de midia, vai pra outro:
+  <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+  Para ter alternativas, vou desenvolver o código oficial abaixo:
+  ps: Ele carregar de cima pra baixo-->
+  <audio preload="metadata" autoplay controls loop>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio.
+      <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </p>
+    <!--preload auto = ele só considera que o site carregou todo quando o audio carregar todo também. É muito ruim para o site, fica muito pesado.
+    preload metadata carrega somente as infos do arquivo, demora um popuquinho a mais para carregar, porém ele toca e não carrega muoto o site. 
+    loop = carrega novamente o audio-->
+  </audio>
+</body>
+</html>

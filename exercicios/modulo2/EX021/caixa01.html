@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Caixas</title>
+  <style>
+    h1 {
+      background-color: lightblue;
+      height: 300px;
+      width: 300px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: blue;
+
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      margin: auto; /*margem fica no meio da tela*/
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+
+      outline-width: 5px;
+      outline-style: dashed;
+      outline-color: black;
+    }
+
+    a {
+      border-width: 10px;
+      border-style: solid;
+      border-color: black;
+
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+/*Podemos simplificar, em short hand
+border: 10px solid black
+padding: 10px 10px 10px 10px (sentido do relógio)
+Se os 4 valores são iguais, podemos usar:
+padding: 10px
+Também posos colocar 2 valores, assim:
+padding: 10px 20px (o de cima é 10 e debaixo é 10 e o da direita e esquerda são 20px)
+margin: 20px 20px 40px 20px
+Para centralizar:
+margin: 20px auto 40px auto;
+outline: 5px dashed salmon;*/
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Caixa Box-Level</h1>
+  <p>parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+  <!--O user agente é o navegador que está configurando
+  Em CSS3, existe o display:block, que é a caixa box-level, e temos o display: inline, que é a caixa inline-level
+  Ao inspecionar no Google Chrome, conseguimos abrir a DevTools e testar todas as configurações de border, padding, margin, etc. visualmente sem mexer no código original. Isso é uma grande vantagem, já que podemos testar a harmonia e composição de como o site vai ficar sem ter que mexer sempre no código para então testar. Além de podermos testar outras possibilidades de composição e propor alternativas no design por comparação. 
+  -->
+</body>
+</html>

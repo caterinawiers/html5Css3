@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*
+HTML id = # em CSS
+HTML class = . em CSS
+
+Não podemos colocar o mesmo id em todos os elementos
+Quando eu coloco o id principal, ele até funciona, mas como regra não podemos usar novamente.
+Quando temos dois elementos que queremos que tenham a mesma configuração, ou seja, queremos repetir a configuração, utilizamos o class
+Não classifique seu class pela forma e sim pela funcionalidade!
+Não pode usar acento dentro das aspas no id
+Id é UNICO
+Class pode ser vários
+*/
+
+body {
+  background-color: #d6fde9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #1e402f;
+}
+
+h1#principal /*esse seletor é personalizado*/ {
+  text-align: center;
+  background-color: #3c805e;
+  color: aliceblue;
+}
+
+h2 {
+  color: #3c805e  ;
+}
+
+.basico {
+  color: #3c805e;
+  font-weight: bold;
+}
+
+.intermediario {
+  color: #80793c;
+}
+
+.avancado {
+  color: #803c3c;
+}
+
+.destaque {
+  background-color: rgba(192, 192, 79, 0.474);
+}
