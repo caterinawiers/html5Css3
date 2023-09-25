@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Imagem de Fundo</title>
+  <style>
+
+    body {
+      background-image: url(imagens/wallpaper001.jpg);
+    }
+    
+    div.quadrado {
+      display: inline-block; /*divs uma do lado da outra*/
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: lightgray;
+      width: 300px;
+      height: 300px;
+    }
+
+    div#q1 {
+      background-color: skyblue;
+    }
+
+    div#q2 {
+      background-image: linear-gradient(to bottom, yellow, red);
+    } /*declaração com a função linear-gradient*/
+
+    div#q3 {
+      background-image: url(imagens/pattern003.png);
+    } /*declaração com a função url. A imagem é sempre carregada por padrão no seu tamanho total. As imagens são repetidas lateralmente. Precisamos nos concentrar em imagns que possam ser geradas e replicadas - criar patterns. Imagens com resolução muito alta deixam o site muito lento*/
+
+  </style>
+</head>
+<body>
+  <div class="quadrado" id="q1">
+
+  </div>
+  <div class="quadrado" id="q2">
+
+  </div>
+  <div class="quadrado" id="q3">
+
+  </div>
+</body>
+</html>
