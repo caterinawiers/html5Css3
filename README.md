@@ -37,7 +37,7 @@
   <a href="https://caterinawiers.github.io/html5Css3/exercicios/modulo/EX017/tamanhodefonte.html">Executar exercício 017C</a><br>
                    
   <a href="https://caterinawiers.github.io/html5Css3/exercicios/modulo2/EX018/fontes01.html">Executar exercício 018</a><br>
-  <br><a href="https://caterinawiers.github.io/html5Css3/exercicios/modulo2/EX018/fontes02.html">Executar exercício 018B</a><br>
+  <a href="https://caterinawiers.github.io/html5Css3/exercicios/modulo2/EX018/fontes02.html">Executar exercício 018B</a><br>
                    
   <a href="https://caterinawiers.github.io/html5Css3/exercicios/modulo2/EX019/seletor01.html">Executar exercício 019</a><br>
                    
