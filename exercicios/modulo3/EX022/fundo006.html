@@ -13,12 +13,23 @@
       background-position: center top; /*imagem alinhado centro acima*/
       background-repeat: no-repeat; /*sem repetir a imagem*/
       /*idealmente é que se configure uma cor de fundo para que, se caso a imagem de fundo demore a carregar, o cliente consiga consumir uma experiência já com a cor do site, dentro da sua paleta ideal*/
-      background-size: cover; /*com 100% 100% o tamanho da imagem vai se adaptar ao tamanho da tela, mas a imagem vai se distorcer/ auto: automático / contain: mostra a imagem 100% exibida, mas conforme há mudança no tamanho da tela, podemos observar a aparição de barras pretas (ou da cor do background desejado)que podem ser laterais, ou acima e abaixo/ cover: cobre, faz caber independente o tamanho da tela, mas não acaba mostrando a imagem totalmente. Ele pode "comer" uma parte da imagem, mas ele ocupa 100% da viewport. O melhor depende do que eu desejo*/
+      background-size: cover; /*com 100% 100% o tamanho da imagem vai se adaptar ao tamanho da tela, mas a imagem vai se distorcer/ auto: automático / contain: mostra a imagem 100% exibida, mas conforme há mudança no tamanho da tela, podemos observar a aparição de barras pretas (ou da cor do background desejado)que podem ser laterais, ou acima e abaixo/ cover: cobre, faz caber independente o tamanho da tela, mas não acaba mostrando a imagem totalmente. Ele pode "comer" uma parte da imagem, mas ele ocupa 100% da viewport. O melhor depende do que eu desejo. Se o conteúdo da main é muito grande, chega uma hora que há a quebra da imagem, e isso podemos arrumar - rolar e ficar com a imagem fixa na tela - se chama vínculo -> attachment*/
+      background-attachment: fixed;
+      /*Shorthand background
+      color
+      image
+      position
+      repeat
+      size - com RESSALVAS
+      attachment
+
+      background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+      */
     }
 
     main {
       background-color: white;
-      width: 400px;
+      max-width: 400px; /*espreme o conteúdo até o tamanho que se precisa, mas não quebra o site com rolagem lateral*/
       padding: 10px;/*espaço entre as letras e o fundo*/
       margin: auto; /*alinhado ao meio*/
       border: 1px solid darkblue;
@@ -31,6 +42,15 @@
     <h1>Teste de Imagem de Fundo</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi iure quibusdam perspiciatis autem facilis accusamus quis! Iusto omnis deserunt, odit nemo, explicabo nam quidem voluptatem, harum eligendi natus mollitia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ullam dolorum. Deleniti facere porro, impedit, maxime nihil officia dolorem tempora neque veritatis sapiente incidunt! Molestiae, soluta? Ad rerum sed explicabo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate assumenda est eum incidunt illum, nihil possimus tempore commodi perferendis quae asperiores corrupti, at enim! Repellat animi eum officia reprehenderit.
     </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi iure quibusdam perspiciatis autem facilis accusamus quis! Iusto omnis deserunt, odit nemo, explicabo nam quidem voluptatem, harum eligendi natus mollitia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ullam dolorum. Deleniti facere porro, impedit, maxime nihil officia dolorem tempora neque veritatis sapiente incidunt! Molestiae, soluta? Ad rerum sed explicabo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate assumenda est eum incidunt illum, nihil possimus tempore commodi perferendis quae asperiores corrupti, at enim! Repellat animi eum officia reprehenderit.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi iure quibusdam perspiciatis autem facilis accusamus quis! Iusto omnis deserunt, odit nemo, explicabo nam quidem voluptatem, harum eligendi natus mollitia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ullam dolorum. Deleniti facere porro, impedit, maxime nihil officia dolorem tempora neque veritatis sapiente incidunt! Molestiae, soluta? Ad rerum sed explicabo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate assumenda est eum incidunt illum, nihil possimus tempore commodi perferendis quae asperiores corrupti, at enim! Repellat animi eum officia reprehenderit.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi iure quibusdam perspiciatis autem facilis accusamus quis! Iusto omnis deserunt, odit nemo, explicabo nam quidem voluptatem, harum eligendi natus mollitia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ullam dolorum. Deleniti facere porro, impedit, maxime nihil officia dolorem tempora neque veritatis sapiente incidunt! Molestiae, soluta? Ad rerum sed explicabo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate assumenda est eum incidunt illum, nihil possimus tempore commodi perferendis quae asperiores corrupti, at enim! Repellat animi eum officia reprehenderit.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi iure quibusdam perspiciatis autem facilis accusamus quis! Iusto omnis deserunt, odit nemo, explicabo nam quidem voluptatem, harum eligendi natus mollitia.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ullam dolorum. Deleniti facere porro, impedit, maxime nihil officia dolorem tempora neque veritatis sapiente incidunt! Molestiae, soluta? Ad rerum sed explicabo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate assumenda est eum incidunt illum, nihil possimus tempore commodi perferendis quae asperiores corrupti, at enim! Repellat animi eum officia reprehenderit.
+    </p>
+
   </main>
   
 </body>
