@@ -1,0 +1,85 @@
+@charset " UTF-8";
+
+/*primeiro, vopu criar configuracões globais para resetar meus elementos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: 'Pixelify Sans', sans-serif; /*títulos*/
+  --fonte3: 'Lobster', sans-serif;  /*conteúdo*/
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  min-height: 100vh; /*tamanho mínimo do corpo do meu site*/
+  background-color: rgb(216, 216, 216);
+  font-family: var(--fonte1);
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps; /*todas as letras ficam maiúsculas, mas tem a primeira letra um pouco maior
+  outra alternativa é o  text-transform: uppercase; mas as letras ficam todas maiúsculas do mesmo tamanho e dá a impressão de que estão gritando */ 
+  font-family: var(--fonte2);
+  font-size: 10vw; /*recurso que usa 10% da largura da tela*/
+}
+
+header > p {
+  padding-bottom: 50px;
+}
+
+header a, footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+/*aqui todas as sections serão configuradas, tanto a normal quanto a imagem*/
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: var(--fonte3);
+  font-size: 3.5vw;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgb(76, 76, 76);
+  color: white;
+}
+
+section.imagem > p {
+  display: inline-block; /*caixa que se adapta ao tamanho do conteúdo*/
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.428);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
