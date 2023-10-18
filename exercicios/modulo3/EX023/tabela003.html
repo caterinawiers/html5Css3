@@ -19,7 +19,12 @@
       border: 1px solid black;
       padding: 10px;
     }
-
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgray;
+    }
     thead, tfoot {
       background-color: gray;
       color: white;
@@ -35,18 +40,25 @@
   <h1>Uso de tabelas grandes</h1>
   <!--ANATOMIA PARA TABELAS GRANDES
   TABLE 
+     CAPTION - LEGENDA (NAO POSSO COLOCAR TR OU TD)
      THEAD - CABEÇA
         TR, TD, TH
       TBODY - CORPO
         TR, TD, TH 
       TFOOT - PÉ
         TR, TD, TH
+
+        título - TH
+        dado = td
 -->
 
 <table>
+  <caption>
+    População das Unidades Federativas
+  </caption> <!--o caption vai ficar na parte de cima da tabela. Se eu colocar lá embaixo do código, ele continua em cima-->
   <thead>
-    <th>Estado</th> <!--cabeçalho-->
-    <th>População</th> <!--cabeçalho-->
+    <th scope="col">Estado</th> <!--cabeçalho e título. O escopo, onde está o estado, está na coluna - col-->
+    <th scope="col" style="width: 100px;">População</th> <!--cabeçalho e título. Aqui consegui fazer uma configuração pontual de stilo na largura dessa coluna-->
   </thead>
   <tbody>
     <tr> <!--primeira linha-->
@@ -64,8 +76,8 @@
   </tbody>
   <tfoot>
     <tr>
-      <th>Total de Habitantes</th>
-      <td class="num"><strong>Use sua calculadora ;D</strong></td>
+      <th scope="row">Total de Habitantes</th> <!--título. O escopo, onde está o dado do total de habitantes, nesse caso, está na linha - row-->
+      <td class="num"><strong>Use a calculadora ;D</strong></td>
   </tfoot>
 </table>
 </body>
