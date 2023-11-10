@@ -13,6 +13,7 @@
     table {
       width: 500px;
       border-collapse: collapse;
+      position: relative; /*fixar o cabeçalho, começamos aqui*/
     }
 
     td, th {
@@ -29,6 +30,15 @@
       background-color: gray;
       color: white;
     }
+    thead > tr > th {
+      position: sticky;
+      top: -1; /*cola. Fixando o cabeçalho*/
+      background-color: gray
+    }
+    thead > tr:nth-child(odd) {
+      background-color: lightgray;
+      font-weight: bold;/*posso fazer o que eu quiser*/
+    } /*efeito zebrado. 2n: um sim um não/odd(2n-1) - células ímpares/even(2n): par*/
 
     td.num {
       text-align: right;
@@ -40,7 +50,7 @@
   <h1>Uso de tabelas grandes</h1>
   <!--ANATOMIA PARA TABELAS GRANDES
   TABLE 
-     CAPTION - LEGENDA (NAO POSSO COLOCAR TR OU TD)
+     CAPTION - LEGENDA (NÃO POSSO COLOCAR TR OU TD)
      THEAD - CABEÇA
         TR, TD, TH
       TBODY - CORPO
@@ -80,5 +90,8 @@
       <td class="num"><strong>Use a calculadora ;D</strong></td>
   </tfoot>
 </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, tempore. Repellat molestiae culpa reprehenderit eius labore accusantium sapiente, porro ipsum. Sit ducimus esse hic facilis quo earum quisquam expedita iure.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis atque quos doloribus aliquid quasi ex nam repellendus nostrum alias id dicta delectus non illo quas impedit aperiam, cumque hic rerum!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quas ex vitae deserunt impedit neque, culpa quisquam id ratione deleniti assumenda vero similique dolor ea voluptate, unde asperiores enim provident.</p>
 </body>
 </html>
